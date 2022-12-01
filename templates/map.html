@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c80b3503ae9c4f228bf601a4dc9454bd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c80b3503ae9c4f228bf601a4dc9454bd" ></div>
+        
+</body>
+<script>    
+    
+            var map_c80b3503ae9c4f228bf601a4dc9454bd = L.map(
+                "map_c80b3503ae9c4f228bf601a4dc9454bd",
+                {
+                    center: [51.5073219, -0.1276474],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0c764a567bd94215aad695b761159ef4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c80b3503ae9c4f228bf601a4dc9454bd);
+        
+    
+            var tile_layer_995a929e17af45da9ede9ee9c5363668 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c80b3503ae9c4f228bf601a4dc9454bd);
+        
+    
+            var marker_1091daf50b9945f4920d42a07b0fc962 = L.marker(
+                [51.494431899999995, -0.1363756],
+                {}
+            ).addTo(map_c80b3503ae9c4f228bf601a4dc9454bd);
+        
+    
+            var beautify_icon_3aed8e3f95a1482eb8b1af4528694ea3 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "red"}
+            )
+            marker_1091daf50b9945f4920d42a07b0fc962.setIcon(beautify_icon_3aed8e3f95a1482eb8b1af4528694ea3);
+        
+    
+        var popup_3eb61a05a8524cd7becde230df83a9fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bbe2561c3a44aa5b1dacadcf45e07dd = $(`<div id="html_7bbe2561c3a44aa5b1dacadcf45e07dd" style="width: 100.0%; height: 100.0%;">Grange Wellington Hotel</div>`)[0];
+            popup_3eb61a05a8524cd7becde230df83a9fa.setContent(html_7bbe2561c3a44aa5b1dacadcf45e07dd);
+        
+
+        marker_1091daf50b9945f4920d42a07b0fc962.bindPopup(popup_3eb61a05a8524cd7becde230df83a9fa)
+        ;
+
+        
+    
+    
+            marker_1091daf50b9945f4920d42a07b0fc962.bindTooltip(
+                `<div>
+                     Grange Wellington Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a9b1490204c486987aae81ff2cdff53 = L.marker(
+                [51.5207945, -0.1310845],
+                {}
+            ).addTo(map_c80b3503ae9c4f228bf601a4dc9454bd);
+        
+    
+            var beautify_icon_457d2866f55c488bb5c6aff1cde1bf24 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "red"}
+            )
+            marker_3a9b1490204c486987aae81ff2cdff53.setIcon(beautify_icon_457d2866f55c488bb5c6aff1cde1bf24);
+        
+    
+        var popup_c6af1c77a97646c0806c4cdd37a7dbc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d599d33e8f142399de1676d659080ec = $(`<div id="html_2d599d33e8f142399de1676d659080ec" style="width: 100.0%; height: 100.0%;">Bloomsbury Palace Hotel</div>`)[0];
+            popup_c6af1c77a97646c0806c4cdd37a7dbc8.setContent(html_2d599d33e8f142399de1676d659080ec);
+        
+
+        marker_3a9b1490204c486987aae81ff2cdff53.bindPopup(popup_c6af1c77a97646c0806c4cdd37a7dbc8)
+        ;
+
+        
+    
+    
+            marker_3a9b1490204c486987aae81ff2cdff53.bindTooltip(
+                `<div>
+                     Bloomsbury Palace Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_641598e4a9ed4e58974300dd2f5d5209 = L.marker(
+                [51.522052200000005, -0.132414],
+                {}
+            ).addTo(map_c80b3503ae9c4f228bf601a4dc9454bd);
+        
+    
+            var beautify_icon_23127d32f1c841a19e1e176fcd5a32f6 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "red"}
+            )
+            marker_641598e4a9ed4e58974300dd2f5d5209.setIcon(beautify_icon_23127d32f1c841a19e1e176fcd5a32f6);
+        
+    
+        var popup_bf489165a00846119edd63baa4ac929e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b35c920f3f3424b94f8659794647e01 = $(`<div id="html_6b35c920f3f3424b94f8659794647e01" style="width: 100.0%; height: 100.0%;">Hotel Cavendish</div>`)[0];
+            popup_bf489165a00846119edd63baa4ac929e.setContent(html_6b35c920f3f3424b94f8659794647e01);
+        
+
+        marker_641598e4a9ed4e58974300dd2f5d5209.bindPopup(popup_bf489165a00846119edd63baa4ac929e)
+        ;
+
+        
+    
+    
+            marker_641598e4a9ed4e58974300dd2f5d5209.bindTooltip(
+                `<div>
+                     Hotel Cavendish
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_caa4220b396342218c6f639fb32f6531 = L.marker(
+                [51.5172398, -0.12203239999999999],
+                {}
+            ).addTo(map_c80b3503ae9c4f228bf601a4dc9454bd);
+        
+    
+            var beautify_icon_ef65e777571448f2b9746f623dd46996 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "red"}
+            )
+            marker_caa4220b396342218c6f639fb32f6531.setIcon(beautify_icon_ef65e777571448f2b9746f623dd46996);
+        
+    
+        var popup_e967ebae0ace46cc829b638400dcc503 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef5b0b471df84242b0882ce8dd623594 = $(`<div id="html_ef5b0b471df84242b0882ce8dd623594" style="width: 100.0%; height: 100.0%;">The Hoxton Holborn</div>`)[0];
+            popup_e967ebae0ace46cc829b638400dcc503.setContent(html_ef5b0b471df84242b0882ce8dd623594);
+        
+
+        marker_caa4220b396342218c6f639fb32f6531.bindPopup(popup_e967ebae0ace46cc829b638400dcc503)
+        ;
+
+        
+    
+    
+            marker_caa4220b396342218c6f639fb32f6531.bindTooltip(
+                `<div>
+                     The Hoxton Holborn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79c0934d5afd4a58a559693aaa9ee6df = L.marker(
+                [51.507745899999996, -0.1378733],
+                {}
+            ).addTo(map_c80b3503ae9c4f228bf601a4dc9454bd);
+        
+    
+            var beautify_icon_10c2006b251f45a2bb63f92c426d219d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "red"}
+            )
+            marker_79c0934d5afd4a58a559693aaa9ee6df.setIcon(beautify_icon_10c2006b251f45a2bb63f92c426d219d);
+        
+    
+        var popup_4dab51b009b14605b0a3f50cf62fe539 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7869994f17884a92b1e421dc88459bc7 = $(`<div id="html_7869994f17884a92b1e421dc88459bc7" style="width: 100.0%; height: 100.0%;">The Cavendish London</div>`)[0];
+            popup_4dab51b009b14605b0a3f50cf62fe539.setContent(html_7869994f17884a92b1e421dc88459bc7);
+        
+
+        marker_79c0934d5afd4a58a559693aaa9ee6df.bindPopup(popup_4dab51b009b14605b0a3f50cf62fe539)
+        ;
+
+        
+    
+    
+            marker_79c0934d5afd4a58a559693aaa9ee6df.bindTooltip(
+                `<div>
+                     The Cavendish London
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
