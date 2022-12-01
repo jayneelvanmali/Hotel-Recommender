@@ -4,5 +4,5 @@
 
 This is a repository for Flask-Heroku deployment.
 
-Data and library are not included in this repo. Please contact me for more information. 
+Data and library are not included in this repo.
 
